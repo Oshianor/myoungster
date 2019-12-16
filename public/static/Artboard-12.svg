@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <clipPath id="clip-Artboard_-_12">
+      <rect width="72" height="72"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_-_12" data-name="Artboard - 12" clip-path="url(#clip-Artboard_-_12)">
+    <g id="Group_260" data-name="Group 260" transform="translate(-23 809)">
+      <path id="Path_229" data-name="Path 229" d="M92.829,37.855V20.61h5.889l.841-6.73h-6.73V9.674c0-1.893.631-3.365,3.365-3.365h3.575V.21C98.927.21,96.824,0,94.511,0c-5.047,0-8.623,3.155-8.623,8.833V13.88H80v6.73h5.889V37.855Z" transform="translate(-30.523 -790.794)" fill="#fff" fill-rule="evenodd"/>
+      <g id="Ellipse_126" data-name="Ellipse 126" transform="translate(23 -809)" fill="none" stroke="#fff" stroke-width="2">
+        <circle cx="36" cy="36" r="36" stroke="none"/>
+        <circle cx="36" cy="36" r="35" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

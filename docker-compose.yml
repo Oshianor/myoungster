@@ -1,0 +1,11 @@
+version: "3"
+services: 
+  myoungster: 
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    ports: 
+      - "8008:3000"
+    volumes: 
+      - /youngster/node_modules
+      - .:/youngster

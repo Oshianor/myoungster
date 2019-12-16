@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <clipPath id="clip-Artboard_-_11">
+      <rect width="72" height="72"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_-_11" data-name="Artboard - 11" clip-path="url(#clip-Artboard_-_11)">
+    <g id="Group_259" data-name="Group 259" transform="translate(81 809)">
+      <path id="Path_230" data-name="Path 230" d="M51.918,37.649c16.6,0,25.638-13.673,25.638-25.638V10.79a19.848,19.848,0,0,0,4.4-4.639,20.269,20.269,0,0,1-5.128,1.465A9.5,9.5,0,0,0,80.73,2.733a22.4,22.4,0,0,1-5.616,2.2A8.72,8.72,0,0,0,68.521,2a9.174,9.174,0,0,0-9.034,9.034,4.761,4.761,0,0,0,.244,1.953A25.244,25.244,0,0,1,41.174,3.465,9.351,9.351,0,0,0,39.953,8.1a9.7,9.7,0,0,0,3.907,7.569,8.231,8.231,0,0,1-4.151-1.221h0a8.924,8.924,0,0,0,7.325,8.79,7.528,7.528,0,0,1-2.442.244,4.155,4.155,0,0,1-1.709-.244,9.25,9.25,0,0,0,8.546,6.348A18.435,18.435,0,0,1,40.2,33.5a6.76,6.76,0,0,1-2.2-.244,23.047,23.047,0,0,0,13.918,4.4" transform="translate(-105.05 -790.588)" fill="#fff" fill-rule="evenodd"/>
+      <g id="Ellipse_125" data-name="Ellipse 125" transform="translate(-81 -809)" fill="none" stroke="#fff" stroke-width="2">
+        <circle cx="36" cy="36" r="36" stroke="none"/>
+        <circle cx="36" cy="36" r="35" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
