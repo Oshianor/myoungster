@@ -9,7 +9,7 @@ import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles(theme => ({
   root: {
-    height: "70vh",
+    height: "100vh",
     backgroundImage: "url('/static/about.jpg')",
     backgroundPosition: "top center",
     backgroundRepeat: "no-repeat",
@@ -17,35 +17,28 @@ const useStyles = makeStyles(theme => ({
     // opacity: 0.5,
     // backgroundColor: "black"
   },
-  Container: {
+
+  aboutHeader: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: 'white',
+  },
+  text: {
+    padding: theme.spacing(0),
+    // textAlign: 'center',
+    color: 'white',
+    
+  },
+  img: {
+    margin: 'auto',
+    height: 400
+  },
+  joint: {
     display: "flex",
-    // flexDirection: "row"
-    justifyContent: "space-between",
-    alignItems: "center"
-  },
-  contact: {
-    borderRadius: 50,
-    borderColor: "white",
-    width: 175,
-    height: 60,
-    color: "white"
-  },
-  texts: {
-    // display: "flex",
-    // flexDirection: "column"
-    color: "white"
-  },
-  text1: {
-    color: "white"
-  },
-  text2: {
-    color: "white",
-    fontWeight: "500"
-  },
-  text3: {
-    color: "white",
-    fontWeight: "600"
+    flexDirection: "row",
+    justifyContent: "flex-end"
   }
+
 }));
 
 
@@ -54,32 +47,31 @@ export default function AboutSection() {
 
   return (
     <div className={classes.root}>
-      <Container>
-        <Grid
-          container
-          direction="row"
-          spacing={16}
-          justify="space-between"
-          alignItems="center"
-        >
-          <Grid item xs={12} sm={9} className={classes.joint}>
-            {/* <div className={classes.texts}> */}
-              <Typography variant="h6" className={classes.text1} >Seen enough?</Typography>
-              <Typography variant="h4" className={classes.text2} >Interested Already?</Typography>
-              <Typography variant="h2" className={classes.text3} >Get Started Today...</Typography>
-            {/* </div> */}
-          </Grid>
-          <Grid item xs={12} sm={3}>
-            <Button
-							variant="outlined"
-							size="large"
-              className={classes.contact}
-            >
-              Contact Us
-            </Button>
-          </Grid>
+      <Grid container spacing={3}>
+        <Grid item xs={12}>
+          <Typography variant="h5" className={classes.aboutHeader} >About Us</Typography>
         </Grid>
-      </Container>
+        <Grid item xs={6} className={classes.joint}>
+          <img src="/static/Artboard-6.svg" alt="" className={classes.img}/>
+        </Grid>
+        <Grid item xs={6}>
+          <Typography variant="h6" className={classes.text} >
+            Youngster is a school Application that allows parents and teachers to jointly
+            moitor the school activities of the pupils/children. It is available on mobile and web
+            responsive screens.
+          </Typography>
+          <Typography variant="h6" className={classes.text} >
+            Youngster is a school Application that allows parents and teachers to jointly
+            moitor the school activities of the pupils/children. It is available on mobile and web
+            responsive screens.
+          </Typography>
+          <Typography variant="h6" className={classes.text} >
+            Youngster is a school Application that allows parents and teachers to jointly
+            moitor the school activities of the pupils/children. It is available on mobile and web
+            responsive screens.
+          </Typography>
+        </Grid>
+      </Grid>
     </div>
   );
 }

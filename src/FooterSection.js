@@ -5,6 +5,12 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
+import Avatar from '@material-ui/core/Avatar';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import CameraAltIcon from '@material-ui/icons/CameraAlt';
+import CallIcon from '@material-ui/icons/Call';
+import EmailIcon from '@material-ui/icons/Email';
 
 
 const useStyles = makeStyles(theme => ({
@@ -15,35 +21,27 @@ const useStyles = makeStyles(theme => ({
     paddingTop: 50,
     paddingBottom: 50
   },
-  Container: {
-    display: "flex",
-    // flexDirection: "row"
-    justifyContent: "space-between",
-    alignItems: "center"
+  avatar: {
+    display: 'flex',
+    '& > *': {
+      margin: theme.spacing(1),
+    },
   },
-  contact: {
-    borderRadius: 50,
-    borderColor: "white",
-    width: 175,
-    height: 60,
-    color: "white"
+  avatarItem: {
+    color: '#fff',
+    backgroundColor: theme.palette.primary.main,
+    border: '1px solid white'
   },
-  texts: {
-    // display: "flex",
-    // flexDirection: "column"
-    color: "white"
+  firstAvaterPosition:{
+    marginLeft: '20%',
+    color: '#fff',
+    backgroundColor: theme.palette.primary.main,
+    border: '1px solid white'
   },
   text1: {
     color: "white"
   },
-  text2: {
-    color: "white",
-    fontWeight: "500"
-  },
-  text3: {
-    color: "white",
-    fontWeight: "600"
-  }
+  
 }));
 
 
@@ -52,33 +50,33 @@ export default function FooterSection() {
 
   return (
     <div className={classes.root}>
-      <Container>
-        <Grid
-          container
-          direction="row"
-          spacing={16}
-          justify="space-between"
-          alignItems="center"
-        >
-          <Grid item xs={12} sm={9} className={classes.joint}>
-            {/* <div className={classes.texts}> */}
-              <Typography variant="h6" className={classes.text1} >Seen enough?</Typography>
-              <Typography variant="h4" className={classes.text2} >Interested Already?</Typography>
-              <Typography variant="h2" className={classes.text3} >Get Started Today...</Typography>
-            {/* </div> */}
-          </Grid>
-          <Grid item xs={12} sm={3}>
-            <Button
-							variant="outlined"
-              size="large"
-              href="#contact"
-              className={classes.contact}
-            >
-              Contact Us
-            </Button>
-          </Grid>
-        </Grid>
-      </Container>
+      <Grid container spacing={3}>
+      <Grid item xs={6} className={classes.avatar}>
+        <Avatar className={ classes.firstAvaterPosition}>
+          <CameraAltIcon  />
+        </Avatar>
+        <Avatar className={classes.avatarItem}>
+          <TwitterIcon />
+        </Avatar>
+        <Avatar className={classes.avatarItem}>
+          <FacebookIcon />
+        </Avatar>
+      </Grid>
+      <Grid item xs={2}>
+      <Typography variant="h5" className={classes.text1} >QUICK LINKS</Typography>
+      <Typography variant="h6" className={classes.text1} >Features</Typography>
+      <Typography variant="h6" className={classes.text1} >About Us</Typography>
+      <Typography variant="h6" className={classes.text1} >FAQs</Typography>
+      <Typography variant="h6" className={classes.text1} >Contact Us</Typography>
+      </Grid>
+      <Grid item xs={4}>
+      <Typography variant="h5" className={classes.text1} >LOCATE US</Typography>
+      <Typography variant="h6" className={classes.text1} >Plot 59, Akin Ogunmade Davids Close</Typography>
+      <Typography variant="h6" className={classes.text1} >Gbagada Phase 2, Lagos.</Typography>
+      <Typography variant="h6" className={classes.text1} ><CallIcon/>+2348123913303</Typography>
+      <Typography variant="h6" className={classes.text1} ><EmailIcon/>info@instiq.com</Typography>
+      </Grid>
+      </Grid>
     </div>
   );
 }
