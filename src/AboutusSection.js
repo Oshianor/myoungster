@@ -9,28 +9,28 @@ import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles(theme => ({
   root: {
-    height: "100vh",
+    height: 700,
     backgroundImage: "url('/static/about.jpg')",
     backgroundPosition: "top center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     // opacity: 0.5,
     // backgroundColor: "black"
+    backgroundColor: "rgb(0,0,0,0.5)"
   },
 
   aboutHeader: {
     padding: theme.spacing(2),
-    textAlign: 'center',
-    color: 'white',
+    textAlign: "center",
+    color: "white"
   },
   text: {
     padding: theme.spacing(0),
     // textAlign: 'center',
-    color: 'white',
-    
+    color: "white"
   },
   img: {
-    margin: 'auto',
+    margin: "auto",
     height: 400
   },
   joint: {
@@ -38,40 +38,41 @@ const useStyles = makeStyles(theme => ({
     flexDirection: "row",
     justifyContent: "flex-end"
   }
-
 }));
 
 
 export default function AboutSection() {
   const classes = useStyles();
-
+//  style={{ backgroundColor: "rgb(0,0,0,0.5)", height: "100%" }}
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Typography variant="h5" className={classes.aboutHeader} >About Us</Typography>
+      <div style={{ backgroundColor: "rgb(0,0,0,0.5)", height: "100%" }}>
+        <Typography variant="h5" className={classes.aboutHeader}>
+          About Us
+        </Typography>
+        <Grid container spacing={6} justify="center" alignItems="center">
+          <Grid item xs={6} className={classes.joint}>
+            <img src="/static/Artboard-6.svg" alt="" className={classes.img} />
+          </Grid>
+          <Grid item xs={6}>
+            <Typography variant="h6" className={classes.text}>
+              Youngster is a school Application that allows parents and teachers
+              to jointly moitor the school activities of the pupils/children. It
+              is available on mobile and web responsive screens.
+            </Typography>
+            <Typography variant="h6" className={classes.text}>
+              Youngster is a school Application that allows parents and teachers
+              to jointly moitor the school activities of the pupils/children. It
+              is available on mobile and web responsive screens.
+            </Typography>
+            <Typography variant="h6" className={classes.text}>
+              Youngster is a school Application that allows parents and teachers
+              to jointly moitor the school activities of the pupils/children. It
+              is available on mobile and web responsive screens.
+            </Typography>
+          </Grid>
         </Grid>
-        <Grid item xs={6} className={classes.joint}>
-          <img src="/static/Artboard-6.svg" alt="" className={classes.img}/>
-        </Grid>
-        <Grid item xs={6}>
-          <Typography variant="h6" className={classes.text} >
-            Youngster is a school Application that allows parents and teachers to jointly
-            moitor the school activities of the pupils/children. It is available on mobile and web
-            responsive screens.
-          </Typography>
-          <Typography variant="h6" className={classes.text} >
-            Youngster is a school Application that allows parents and teachers to jointly
-            moitor the school activities of the pupils/children. It is available on mobile and web
-            responsive screens.
-          </Typography>
-          <Typography variant="h6" className={classes.text} >
-            Youngster is a school Application that allows parents and teachers to jointly
-            moitor the school activities of the pupils/children. It is available on mobile and web
-            responsive screens.
-          </Typography>
-        </Grid>
-      </Grid>
+      </div>
     </div>
   );
 }

@@ -39,7 +39,9 @@ const useStyles = makeStyles(theme => ({
     border: '1px solid white'
   },
   text1: {
-    color: "white"
+    color: "white",
+    display: "flex",
+    
   },
   
 }));
@@ -64,17 +66,17 @@ export default function FooterSection() {
       </Grid>
       <Grid item xs={2}>
       <Typography variant="h5" className={classes.text1} >QUICK LINKS</Typography>
-      <Typography variant="h6" className={classes.text1} >Features</Typography>
-      <Typography variant="h6" className={classes.text1} >About Us</Typography>
-      <Typography variant="h6" className={classes.text1} >FAQs</Typography>
-      <Typography variant="h6" className={classes.text1} >Contact Us</Typography>
+      <Typography variant="body1" className={classes.text1} >Features</Typography>
+      <Typography variant="body1" className={classes.text1} >About Us</Typography>
+      <Typography variant="body1" className={classes.text1} >FAQs</Typography>
+      <Typography variant="body1" className={classes.text1} >Contact Us</Typography>
       </Grid>
       <Grid item xs={4}>
       <Typography variant="h5" className={classes.text1} >LOCATE US</Typography>
-      <Typography variant="h6" className={classes.text1} >Plot 59, Akin Ogunmade Davids Close</Typography>
-      <Typography variant="h6" className={classes.text1} >Gbagada Phase 2, Lagos.</Typography>
-      <Typography variant="h6" className={classes.text1} ><CallIcon/>+2348123913303</Typography>
-      <Typography variant="h6" className={classes.text1} ><EmailIcon/>info@instiq.com</Typography>
+      <Typography variant="body1" className={classes.text1} >Plot 59, Akin Ogunmade Davids Close</Typography>
+      <Typography variant="body1" className={classes.text1} >Gbagada Phase 2, Lagos.</Typography>
+      <Typography variant="body1" className={classes.text1} ><CallIcon/>+2348123913303</Typography>
+      <Typography variant="body1" className={classes.text1} ><EmailIcon/>info@instiq.com</Typography>
       </Grid>
       </Grid>
     </div>
