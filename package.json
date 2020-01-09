@@ -7,13 +7,14 @@
     "@material-ui/icons": "latest",
     "clsx": "latest",
     "next": "latest",
+    "next-routes": "^1.4.2",
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   }
 }
