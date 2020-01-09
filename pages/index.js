@@ -4,7 +4,7 @@ import Container from "@material-ui/core/Container";
 import FirstBoard from '../src/FirstBoard';
 import SecondBoard from '../src/SecondBoard';
 import ThirdBoard from '../src/ThirdBoard';
-import ContactSection from '../src/contactSection';
+import ContactSection from '../src/ContactSection';
 import FourthBoard from '../src/fourthBoard';
 import AboutSection from '../src/AboutusSection';
 import FiveBoard from '../src/FiveBoard';
